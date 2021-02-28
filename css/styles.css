@@ -32,114 +32,126 @@
 }
 
 input#action-button {
-  display: none;
+	display: none;
 }
 
 .menu {
-  position: fixed;
-  margin: 20px -5px;
-  z-index: 1;
+	position: fixed;
+	margin: 20px 10px;
+	z-index: 1;
 }
 
 .btn {
-  background: black;
-  border: 2px solid;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  cursor: pointer;
-  color: white;
-  z-index: 1;
+	background: black;
+	border: 2px solid;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	color: white;
+	z-index: 1;
+	font-size: 20px;
 }
 
 .btn-large {
-  width: 60px;
-  height: 60px;
-  border-color: black;
+	width: 60px;
+	height: 60px;
+	border-color: black;
 }
 
 .btn-menu:after,.btn-menu:before {
-  content: "";
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: #fff;
-  position: absolute;
-  top: 26px;
-  left: 16px;
-  transition: transform 100ms;
+	content: "";
+	display: block;
+	width: 25px;
+	height: 3px;
+	background: #fff;
+	position: absolute;
+	top: 26px;
+	left: 16px;
+	transition: transform 100ms;
 }
 
 .btn-menu:after {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 .btn-menu:before {
-  transform: translateY(5px);
+	transform: translateY(5px);
 }
 
 .btn-html {
-  background: #4d94ff;
+	background: #4d94ff;
 }
 
 .btn-css {
-  background: #2ecc71;
+	background: #2ecc71;
 }
 
 .btn-js {
-  background: #16a085;
+	background: #16a085;
+}
+
+.btn-home {
+	background: white;
+	color: black;
+}
+
+.svg-icon-home {
+	margin: 8px;
 }
 
 .actions-menu {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  left: 15px;
-  top: 0px;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	left: 0px;
+	top: 0px;
 }
 
 .actions-menu .btn {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  opacity: 0;
-  transition: top 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
-              left 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
-              opacity 200ms;
+	position: absolute;
+	top: 8px;
+	opacity: 0;
+	transition: top 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+	          left 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+	          opacity 200ms;
 }
 
 .actions-menu .btn-menu {
-  position: absolute;
-  opacity: 1;
-  top: 0;
-  left: 0;
-  z-index: 1;
+	position: absolute;
+	opacity: 1;
+	top: 0;
+	left: 0;
+	z-index: 1;
 }
 
 .btn-menu, #action-button:checked + .actions-menu > .btn {
-  opacity: 1;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	opacity: 1;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 #action-button:checked + .actions-menu > .btn-menu:after {
-  transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 #action-button:checked + .actions-menu > .btn-menu:before {
-  transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 #action-button:checked + .actions-menu > .btn-html {
-  top: 70px;
+	top: 80px;
 }
 
 #action-button:checked + .actions-menu > .btn-css {
-  top: 50px;
-  left: 50px;
+	top: 163px;
 }
 
 #action-button:checked + .actions-menu > .btn-js {
-  left: 70px;
+	top: 246px;
+}
+
+#action-button:checked + .actions-menu > .btn-home {
+	top: 329px;
 }
 
 .blog-title {
