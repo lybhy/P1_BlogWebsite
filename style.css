@@ -1,0 +1,20 @@
+/* Stylesheet for P1 Blog Website   */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/***** H E A D E R *****/
+
+.blog-header{
+	background-color: grey;
+	padding: 10px;
+}
+
+.blog-title {
+	/*font-family: 'Roboto Mono', monospace;*/
+	font: 20px 'Roboto Mono';
+
+}
