@@ -1,20 +1,72 @@
 /* Stylesheet for P1 Blog Website   */
 
+/***** G L O B A L   S E T T I N G S *****/
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: 'Roboto Mono', monospace;
+}
+
+/***** P A G E   S E T T I N G S *****/
+
+.container {
+	display: grid;
+  	grid-template-columns: 1fr;
+ 	grid-template-rows: 50px 80vh 40px;
+  	grid-template-areas: 
+    "header"
+    "main"
+    "footer";
 }
 
 /***** H E A D E R *****/
 
 .blog-header{
-	background-color: grey;
-	padding: 10px;
+	grid-area: header;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	background-image: linear-gradient(to right, #4d94ff , #00b386); 
+}
+
+.menu {
+	/* TODO IN PC VERSION: cursor: pointer; */
+	display: grid;
+	width: 50px;
+	height: 50px;
+	grid-template-columns: 8px 8px 8px;
+	grid-template-rows: 8px 8px 8px; 
+	grid-gap: 3px;
+	margin: 10px;
+}
+
+.menu-dot {
+	background-color: black;
 }
 
 .blog-title {
-	/*font-family: 'Roboto Mono', monospace;*/
-	font: 20px 'Roboto Mono';
+	font-size: 20px;
+	margin: 10px;
+}
 
+/***** M A I N *****/
+
+.content {
+	grid-area: main;
+}
+
+/***** F O O T E R *****/
+
+.blog-footer {
+	grid-area: footer;
+	padding: 10px;
+	background-image: linear-gradient(to right, #4d94ff , #00b386); 
+	text-align: center;
+	font-size: 15px;
+}
+
+a:link.contact-footer {
+	text-decoration: none;
 }
