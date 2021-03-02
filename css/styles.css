@@ -245,9 +245,6 @@ a:link.contact-footer {
 	padding: 5px;
 	margin: 10px 0;
 	background: #a4a3a1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	text-align: center;
 }
 
@@ -260,6 +257,9 @@ a:link.contact-footer {
 	height: 80px;
 	border-radius: 40px;
 	background: #3380dc;
+	position: relative;
+	left: 50%;
+	transform: translateX(-40px);
 }
 
 .svg-avatar {
@@ -303,4 +303,9 @@ a:link.contact-footer {
 	width: 40px;
 	margin: 5px;
 }
+
+/* M e d i a    q u e r i e s */
+
+@import "css/tabletstyle.css" screen and (min-width: 901px);
+
 
