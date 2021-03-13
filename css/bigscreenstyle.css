@@ -1,0 +1,80 @@
+/**********************************/
+/*** M e d i a    q u e r i e s ***/
+/**********************************/
+
+/*    B I G   S C R E E N    */
+
+@media only screen and (min-width: 901px) {
+
+	/***** M A I N *****/
+
+	.blog-content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.card {
+		height: 280px;
+		width: 450px;
+		grid-template-areas:
+		"cardimg cardimg cardtitle cardtitle"
+		"cardimg cardimg cardtext cardtext"
+		"cardimg cardimg cardtext cardtext"
+		"cardimg cardimg . cardbutton";
+	}
+
+	/***** P O S T [on Post Page]  *****/
+
+	.post-content {
+		display: grid;
+		grid-template-columns: 1fr 300px;
+	 	grid-template-rows: auto 200px 40px 40px;
+	  	grid-template-areas: 
+	    "post bio"
+	    "related bio"
+	    "social social"
+	    "footer footer"
+	}
+	
+	.post {
+		margin: 10px 40px 0 0;
+		grid-area: post;
+	}
+
+	.bio {
+		grid-area: bio;
+	}
+
+	.related-posts {
+		margin-right: 40px;
+		grid-area: related;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.related {
+		margin: 0 30px;
+		width: 240px;
+		height: 180px;
+	}
+
+	.social {
+		grid-area: social;
+
+	}
+
+	.social {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.twitter,
+	.facebook,
+	.youtube {
+		margin: 0 20px;
+	}
+
+}
