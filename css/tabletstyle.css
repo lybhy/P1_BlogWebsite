@@ -1,7 +1,38 @@
+/**********************************/
+/*** M e d i a    q u e r i e s ***/
+/**********************************/
 
-/***** P O S T [on Post Page]  *****/
+/*    T A B L E T    */
 
-.related {
-	width: 300px;
-	height: 150px;
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+	
+	/***** M A I N *****/
+
+	.card {
+		grid-template-areas:
+		"cardimg cardtitle cardtitle cardtitle"
+		"cardimg cardtext cardtext cardtext"
+		"cardimg cardtext cardtext cardtext"
+		"cardimg . cardbutton cardbutton";
+	}
+
+	/***** P O S T [on Post Page]  *****/
+
+	.related-posts {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.related {
+		width: 200px;
+		height: 150px;
+	}
+
+	.social {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
 }
