@@ -1,6 +1,20 @@
-/* Stylesheet for P1 Blog Website   */
+/****************************************************/
+/***** imported Stylesheets for P1 Blog Website *****/
+/****************************************************/
 
+@import 'phonestyle.css';
+@import 'tabletstyle.css';
+@import 'bigscreenstyle.css';
+
+/*********************************/
+/***** F O N T   S T Y L E S *****/
+/*********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,200&display=swap');
+
+/*****************************************/
 /***** G L O B A L   S E T T I N G S *****/
+/*****************************************/
 
 * {
 	box-sizing: border-box;
@@ -115,8 +129,8 @@ input#action-button {
 	top: 8px;
 	opacity: 0;
 	transition: top 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
-	          left 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
-	          opacity 200ms;
+	          	left 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+	          	opacity 200ms;
 }
 
 .actions-menu .btn-menu {
@@ -166,8 +180,6 @@ input#action-button {
 .blog-content,
 .post-content {
 	grid-area: main;
-	display: flex;
-	flex-direction: column;
 	background: #e2e1e0;
 }
 
@@ -181,11 +193,6 @@ input#action-button {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	grid-gap: 5px;
-	grid-template-areas:
-	"cardimg cardimg cardtitle cardtitle"
-	"cardimg cardimg cardtext cardtext"
-	"cardimg cardimg cardtext cardtext"
-	"cardimg cardimg . cardbutton";
 }
 
 .card-img {
@@ -275,12 +282,6 @@ a:link.contact-footer {
 	margin-top: 10px;
 }
 
-.related-posts {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
 .related {
 	width: 90px;
 	height: 90px;
@@ -292,9 +293,6 @@ a:link.contact-footer {
 	margin-top: 15px;
 	padding-top: 20px;
 	border-top: 5px solid #3380dc;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
 }
 
 .twitter,
@@ -303,9 +301,4 @@ a:link.contact-footer {
 	width: 40px;
 	margin: 5px;
 }
-
-/* M e d i a    q u e r i e s */
-
-@import "css/tabletstyle.css" screen and (min-width: 901px);
-
 
